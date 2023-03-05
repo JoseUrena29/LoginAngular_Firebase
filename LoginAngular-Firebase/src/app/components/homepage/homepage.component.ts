@@ -20,6 +20,7 @@ export class HomepageComponent implements OnInit {
     })
   }
   
+  //Metodo para realizar el cierre de sesion del usuario que realizo el Login 
   logOut() {
     this.afAuth.signOut().then(() => this.router.navigate(['/login']));
   }

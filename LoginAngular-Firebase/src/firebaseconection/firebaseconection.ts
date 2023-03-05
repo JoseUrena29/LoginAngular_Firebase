@@ -1,4 +1,4 @@
-// Configuracion de Firebase
+// Configuracion de Firebase para el uso de los usuarios en el Programa de Angular
 export const firebaseconection = {
   production: false,
   firebaseConfig : {

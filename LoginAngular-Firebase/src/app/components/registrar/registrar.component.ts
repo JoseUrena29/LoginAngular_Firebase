@@ -44,6 +44,10 @@ export class RegistrarComponent implements OnInit {
     })
   }
 
+  
+  /* Captura de errores para mostrar la ventana en pantalla, son errores capturados con el catch y convertidos a string.
+  Son los errores más comunes que nos vamos a encontrar al momento de realizar el Registro de Usuarios para Firebase */
+
   firebaseError(code: string) {
     switch (code) {
       case 'auth/email-already-in-use':
@@ -52,6 +56,8 @@ export class RegistrarComponent implements OnInit {
         return 'La contraseña debe tener al menos 6 caracteres.';
       case 'auth/invalid-email':
         return 'Por favor digite un email en formato correcto Ejemplo: correo@gmail.com';
+      case 'auth/internal-error':
+        return 'Por favor digite una contraseña';
       default:
         return 'Error Deconocido!';
     }

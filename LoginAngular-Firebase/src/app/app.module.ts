@@ -13,7 +13,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { VerificarloginComponent } from './components/verificarlogin/verificarlogin.component';
-import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { RegistrarComponent } from './components/registrar/registrar.component';
 import { firebaseconection } from 'src/firebaseconection/firebaseconection';
 
@@ -24,7 +23,6 @@ import { firebaseconection } from 'src/firebaseconection/firebaseconection';
     LoginComponent,
     HomepageComponent,
     VerificarloginComponent,
-    SpinnerComponent,
     RegistrarComponent
   ],
   imports: [
